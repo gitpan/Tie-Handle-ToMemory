@@ -1,0 +1,15 @@
+--- #YAML:1.0
+name: Tie-Handle-ToMemory
+version: 0.10
+author:
+  - David A Golden <dagolden@cpan.org>
+abstract: Print to or read from a scalar in memory
+license: perl
+build_requires:
+  Test::Exception: 0.19
+  Test::More: 0.53
+provides:
+  Tie::Handle::ToMemory:
+    file: lib/Tie/Handle/ToMemory.pm
+    version: 0.10
+generated_by: Module::Build version 0.2608
