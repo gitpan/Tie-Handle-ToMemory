@@ -3,7 +3,9 @@ Changes
 lib/Tie/Handle/ToMemory.pm
 LICENSE
 MANIFEST			This list of files
+META.yml
 README
+t/00-pod.t
+t/00-podcover.t
 t/01-new.t
 Todo
-META.yml

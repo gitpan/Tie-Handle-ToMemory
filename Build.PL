@@ -15,5 +15,7 @@ Module::Build->new(
     build_requires  => { 
         Test::More => 0.53,
         Test::Exception => 0.19,
+        Test::Pod => 1.00,
+        Test::Pod::Coverage => 1.00,
     },
 )->create_build_script;
