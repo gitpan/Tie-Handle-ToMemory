@@ -3,7 +3,7 @@ use 5.004;
 use strict;
 # use warnings; # Not available before 5.6
 use vars qw($VERSION);
-$VERSION = "0.11";
+$VERSION = "0.12";
 
 # Required modules
 use Carp;

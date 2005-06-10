@@ -4,18 +4,16 @@ use Module::Build;
 Module::Build->new(
     module_name     => 'Tie::Handle::ToMemory',
     dist_author => 'David A Golden <dagolden@cpan.org>', 
-    create_makefile_pl => "passthrough",
+    create_makefile_pl => "traditional",
     create_readme => 1,
     license         => 'perl',
     requires => {
-        # module requirements here
+        perl => 5.004,
     },
     recommends => {},
     conflicts => {},
     build_requires  => { 
-        Test::More => 0.53,
-        Test::Exception => 0.19,
-        Test::Pod => 1.00,
-        Test::Pod::Coverage => 1.00,
+        Test::Exception => 0.20,
+        Test::More => 0.47,
     },
 )->create_build_script;
