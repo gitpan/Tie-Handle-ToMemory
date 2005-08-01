@@ -1,5 +1,9 @@
 Revision history for Perl module Tie::Handle::ToMemory
 
+0.13 Mon Aug  1 11:51:27 EDT 2005
+    - build_requires to requires for CPANPLUS bug work around
+    - noted IO::Scalar and IO::String in See Also
+
 0.12 Thu Jun  9 22:56:52 EDT 2005
     - removed pod/podcoverage testing to minimize dependencies
     - updated Build.PL to better manage dependencies

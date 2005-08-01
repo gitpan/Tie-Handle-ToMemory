@@ -1,6 +1,6 @@
 ---
 name: Tie-Handle-ToMemory
-version: 0.12
+version: 0.13
 author:
   - David A Golden <dagolden@cpan.org>
 abstract: Print to or read from a scalar in memory
@@ -13,5 +13,5 @@ build_requires:
 provides:
   Tie::Handle::ToMemory:
     file: lib/Tie/Handle/ToMemory.pm
-    version: 0.12
-generated_by: Module::Build version 0.2701
+    version: 0.13
+generated_by: Module::Build version 0.2702

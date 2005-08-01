@@ -3,7 +3,7 @@ use 5.004;
 use strict;
 # use warnings; # Not available before 5.6
 use vars qw($VERSION);
-$VERSION = "0.12";
+$VERSION = "0.13";
 
 # Required modules
 use Carp;
@@ -332,6 +332,10 @@ The following functions have not been implemented.
 1; #this line is important and will help the module return a true value
 __END__
 
+=head1 SEE ALSO
+
+L<IO::Scalar>, L<IO::String>, L<perltie>
+
 =head1 INSTALLATION
 
 The following commands will build, test, and install this module:
@@ -361,16 +365,5 @@ it and/or modify it under the same terms as Perl itself.
 
 The full text of the license can be found in the
 LICENSE file included with this module.
-
-
-=head1 SEE ALSO
-
-=over
-
-=item *
-
-L<perltie>
-
-=back
 
 =cut

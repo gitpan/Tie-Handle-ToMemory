@@ -54,11 +54,11 @@ USAGE
  
         TIEHANDLE is called when tying to a specific filehandle. Only the
         first argument of the list is used and follows the same rules as
-        with "new", above. The blessed object returned is a reference to the
+        with `new', above. The blessed object returned is a reference to the
         scalar which holds the underlying data.
 
-    The following tying functions have been implemented. See "perldoc -f
-    tie" and "perldoc perltie" for more details.
+    The following tying functions have been implemented. See `perldoc -f
+    tie' and `perldoc perltie' for more details.
 
     WRITE this, scalar, length, offset
     PRINT this, LIST
@@ -85,6 +85,8 @@ USAGE
     TELL this
     DESTROY this
     UNTIE this
+SEE ALSO
+    IO::Scalar, IO::String, perltie
 
 INSTALLATION
     The following commands will build, test, and install this module:
@@ -111,7 +113,4 @@ COPYRIGHT
 
     The full text of the license can be found in the LICENSE file included
     with this module.
-
-SEE ALSO
-    *   perltie
 
