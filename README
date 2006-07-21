@@ -13,11 +13,11 @@ SYNOPSIS
       # tie links a specific handle to memory
       my $tied = tie *FH, 'Tie::Handle::ToMemory', \$data;
       print FH "blessed reference";    # $$tied eq "blessed reference"
-  
-      # same thing, but using anonymous scalars
+      
+  # same thing, but using anonymous scalars
       $fh = Tie::Handle::ToMemory->new();
       $tied = tie *FH, 'Tie::Handle::ToMemory';
-  
+
 DESCRIPTION
     As of Perl 5.8, filehandles can be opened to "in memory" files held in
     ordinary scalars. This module provides a similar capability that is
@@ -35,7 +35,7 @@ USAGE
          my $fh3 = Tie::Handle::ToMemory->new( $data );
          my $fh3 = Tie::Handle::ToMemory->new( "initial contents" );
          ${tied(*$fh3)} = "new contents"; # access the underlying scalar directly
- 
+
         Unlike an ordinary constructor, this returns a reference to the
         anonymous tied filehandle, not the underlying tied object. This
         reference can be used directly with print() and similar functions.
@@ -51,14 +51,14 @@ USAGE
          my $tied2 = tie *FH, 'Tie::Handle::ToMemory', $data;
          my $tied3 = tie *FH, 'Tie::Handle::ToMemory', "initial contents";
          $$tied3 = "new contents"; # access the underlying scalar directly
- 
+
         TIEHANDLE is called when tying to a specific filehandle. Only the
         first argument of the list is used and follows the same rules as
-        with `new', above. The blessed object returned is a reference to the
+        with "new", above. The blessed object returned is a reference to the
         scalar which holds the underlying data.
 
-    The following tying functions have been implemented. See `perldoc -f
-    tie' and `perldoc perltie' for more details.
+    The following tying functions have been implemented. See "perldoc -f
+    tie" and "perldoc perltie" for more details.
 
     WRITE this, scalar, length, offset
     PRINT this, LIST
@@ -85,6 +85,7 @@ USAGE
     TELL this
     DESTROY this
     UNTIE this
+
 SEE ALSO
     IO::Scalar, IO::String, perltie
 

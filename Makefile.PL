@@ -2,14 +2,14 @@
 use ExtUtils::MakeMaker;
 WriteMakefile
 (
+          'PL_FILES' => {},
+          'INSTALLDIRS' => 'site',
           'NAME' => 'Tie::Handle::ToMemory',
+          'EXE_FILES' => [],
           'VERSION_FROM' => 'lib/Tie/Handle/ToMemory.pm',
           'PREREQ_PM' => {
-                           'Test::Exception' => '0.2',
-                           'Test::More' => '0.47'
-                         },
-          'INSTALLDIRS' => 'site',
-          'EXE_FILES' => [],
-          'PL_FILES' => {}
+                           'Test::More' => '0.47',
+                           'Test::Exception' => '0.21'
+                         }
         )
 ;

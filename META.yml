@@ -1,17 +1,22 @@
 ---
 name: Tie-Handle-ToMemory
-version: 0.13
+version: 0.14
 author:
-  - David A Golden <dagolden@cpan.org>
+  - 'David A Golden <dagolden@cpan.org>'
 abstract: Print to or read from a scalar in memory
 license: perl
+resources:
+  license: http://dev.perl.org/licenses/
 requires:
   perl: 5.004
 build_requires:
-  Test::Exception: 0.2
+  Test::Exception: 0.21
   Test::More: 0.47
 provides:
   Tie::Handle::ToMemory:
     file: lib/Tie/Handle/ToMemory.pm
-    version: 0.13
-generated_by: Module::Build version 0.2702
+    version: 0.14
+generated_by: Module::Build version 0.2804
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2

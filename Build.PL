@@ -13,7 +13,7 @@ Module::Build->new(
     recommends => {},
     conflicts => {},
     build_requires  => { 
-        Test::Exception => 0.20,
+        Test::Exception => 0.21,
         Test::More => 0.47,
     },
 )->create_build_script;
